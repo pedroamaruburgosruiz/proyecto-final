@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de cartón</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de cartón</h1>
+        <p>Peso actual: <strong>{{ peso }}</strong></p>
+        <p>Elige el tipo de cartón</p>
+    </div>
+
+    <div class="opciones-carton">
+        <a href="/carton/caja" class="opcion">
+            <img src="{{ url_for('static', filename='images/carton.png') }}" alt="caja">
+            <p>Caja</p>
+        </a>
+        <a href="/carton/plegadiza" class="opcion">
+            <img src="{{ url_for('static', filename='images/plegadiza.png') }}" alt="plegadiza">
+            <p>Plegadiza</p>
+        </a>
+    </div>
+</body>
+</html>
+

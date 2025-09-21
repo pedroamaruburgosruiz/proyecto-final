@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de latas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de latas</h1>
+        <p>Peso actual: <strong>{{ peso }}</strong></p>
+        <p>Selecciona la cantidad de latas</p>
+    </div>
+
+    <div class="medida_latas">
+        <a href="/latas/0.1" class="opcion">
+            <img src="{{ url_for('static', filename='images/latas.png') }}" alt="pocas latas">
+            <p>10 latas</p>
+        </a>
+        <a href="/latas/0.3" class="opcion">
+            <img src="{{ url_for('static', filename='images/latas.png') }}" alt="latas medianas">
+            <p>20 latas</p>
+        </a>
+        <a href="/latas/0.7" class="opcion">
+            <img src="{{ url_for('static', filename='images/latas.png') }}" alt="muchas latas">
+            <p>40 latas</p>
+        </a>
+    </div>
+</body>
+</html>

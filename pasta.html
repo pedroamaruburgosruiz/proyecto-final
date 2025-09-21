@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Plástico - Pasta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Plástico - Pasta</h1>
+        <p>Peso actual: <strong>{{ peso }}</strong></p>
+        <p>Selecciona el tamaño</p>
+    </div>
+
+    <div class="medida_pasta">
+        <a href="/pasta/0.1" class="opcion">
+            <img src="{{ url_for('static', filename='images/pasta.png') }}" alt="pasta pequeña">
+            <p>2 litros</p>
+        </a>
+        <a href="/pasta/0.2" class="opcion">
+            <img src="{{ url_for('static', filename='images/pasta.png') }}" alt="pasta mediana">
+            <p>4 litros</p>
+        </a>
+    </div>
+</body>
+</html>

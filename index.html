@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de reciclaje</title>
+    <!-- Conectar el CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>♻ Calculadora de Reciclaje</h1>
+        <p>Elige el material a pesar</p>
+        <p><strong>Peso actual:</strong> {{ peso }}</p>
+    </div>
+
+    <header>
+        <div class="opciones-material">
+            <a href="/carton" class="opcion">
+                <img src="{{ url_for('static', filename='images/carton.png') }}" alt="cartón">
+                <p>Cartón</p>
+            </a>
+
+            <a href="/papel" class="opcion">
+                <img src="{{ url_for('static', filename='images/papel.png') }}" alt="papel">
+                <p>Papel</p>
+            </a>
+
+            <a href="/latas" class="opcion">
+                <img src="{{ url_for('static', filename='images/latas.png') }}" alt="latas">
+                <p>Latas</p>
+            </a>
+
+            <a href="/plastico" class="opcion">
+                <img src="{{ url_for('static', filename='images/botella.png') }}" alt="plástico">
+                <p>Plástico</p>
+            </a>
+
+            <a href="{{ url_for('reset') }}" class="opcion">
+                🔄 Reiniciar peso
+            </a>
+        </div>
+    </header>
+</body>
+</html>

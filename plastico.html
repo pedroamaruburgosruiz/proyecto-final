@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de plástico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de plástico</h1>
+        <p>Peso actual: <strong>{{ peso }}</strong></p>
+        <p>Elige el tipo de plástico</p>
+    </div>
+
+    <div class="opciones-plastico">
+        <a href="/plastico/pasta" class="opcion">
+            <img src="{{ url_for('static', filename='images/pasta.png') }}" alt="plástico pasta">
+            <p>Pasta</p>
+        </a>
+        <a href="/plastico/pet" class="opcion">
+            <img src="{{ url_for('static', filename='images/botella.png') }}" alt="plástico PET">
+            <p>PET</p>
+        </a>
+    </div>
+</body>
+</html>

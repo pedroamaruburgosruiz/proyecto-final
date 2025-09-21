@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de papel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de papel</h1>
+        <p>Peso actual: <strong>{{ peso }}</strong></p>
+        <p>Selecciona la cantidad de hojas</p>
+    </div>
+
+    <div class="medida_papel">
+        <a href="/papel/0.3" class="opcion">
+            <img src="{{ url_for('static', filename='images/papel.png') }}" alt="pocas hojas">
+            <p>50 hojas</p>
+        </a>
+        <a href="/papel/0.7" class="opcion">
+            <img src="{{ url_for('static', filename='images/papel.png') }}" alt="hojas medianas">
+            <p>100 hojas</p>
+        </a>
+        <a href="/papel/1.4" class="opcion">
+            <img src="{{ url_for('static', filename='images/papel.png') }}" alt="muchas hojas">
+            <p>200 hojas</p>
+        </a>
+    </div>
+</body>
+</html>

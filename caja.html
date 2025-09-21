@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartón - Caja</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cartón - Cajas</h1>
+        <p>Peso actual: <strong>{{ peso }}</strong></p>
+        <p>Selecciona el tamaño de la caja</p>
+    </div>
+
+    <div class="medida_caja">
+        <a href="/caja/0.5" class="opcion">
+            <img src="{{ url_for('static', filename='images/pequeño.png') }}" alt="caja pequeña">
+            <p>Pequeña</p>
+        </a>
+
+        <a href="/caja/1" class="opcion">
+            <img src="{{ url_for('static', filename='images/mediano.png') }}" alt="caja mediana">
+            <p>Mediana</p>
+        </a>
+
+        <a href="/caja/1.5" class="opcion">
+            <img src="{{ url_for('static', filename='images/grande.png') }}" alt="caja grande">
+            <p>Grande</p>
+        </a>
+
+        <a href="/caja/2" class="opcion">
+            <img src="{{ url_for('static', filename='images/grande.png') }}" alt="caja extra grande">
+            <p>Extra Grande</p>
+        </a>
+    </div>
+</body>
+</html>

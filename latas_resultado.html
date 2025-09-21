@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado - Latas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado del cálculo - Latas</h1>
+        <p>Peso agregado: <strong>{{ peso }}</strong></p>
+        <p>Peso acumulado total: <strong>{{ peso_final }}</strong></p>
+    </div>
+
+    <div class="opciones-material">
+        <a href="/" class="opcion">🏠 Volver al inicio</a>
+        <a href="/latas" class="opcion">🥫 Elegir más latas</a>
+    </div>
+</body>
+</html>

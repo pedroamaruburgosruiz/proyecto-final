@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Plástico - PET</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Plástico - PET</h1>
+        <p>Peso actual: <strong>{{ peso }}</strong></p>
+        <p>Selecciona la cantidad de botellas (200ml)</p>
+    </div>
+
+    <div class="medida_pet">
+        <a href="/pet/0.1" class="opcion">
+            <img src="{{ url_for('static', filename='images/botella.png') }}" alt="10 botellas">
+            <p>10 botellas</p>
+        </a>
+        <a href="/pet/0.2" class="opcion">
+            <img src="{{ url_for('static', filename='images/botella.png') }}" alt="20 botellas">
+            <p>20 botellas</p>
+        </a>
+        <a href="/pet/0.5" class="opcion">
+            <img src="{{ url_for('static', filename='images/botella.png') }}" alt="50 botellas">
+            <p>50 botellas</p>
+        </a>
+    </div>
+</body>
+</html>

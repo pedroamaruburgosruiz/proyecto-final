@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartón - Plegadiza</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cartón - Cajas Plegadizas</h1>
+        <p>Peso actual: <strong>{{ peso }}</strong></p>
+        <p>Selecciona el tamaño de la caja plegadiza</p>
+    </div>
+
+    <div class="medida_plegadiza">
+        <a href="/plegadiza/0.06" class="opcion">
+            <img src="{{ url_for('static', filename='images/pequeño.png') }}" alt="plegadiza pequeña">
+            <p>Pequeña</p>
+        </a>
+        <a href="/plegadiza/0.28" class="opcion">
+            <img src="{{ url_for('static', filename='images/mediano.png') }}" alt="plegadiza mediana">
+            <p>Mediana</p>
+        </a>
+        <a href="/plegadiza/0.70" class="opcion">
+            <img src="{{ url_for('static', filename='images/grande.png') }}" alt="plegadiza grande">
+            <p>Grande</p>
+        </a>
+    </div>
+</body>
+</html>
