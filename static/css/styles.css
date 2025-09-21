@@ -1,0 +1,86 @@
+/* --- Estilos generales --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #2e2e2e;            /* Texto gris oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h1, h2 {
+    text-align: center;
+    color: #2e7d32; /* Verde ecológico */
+    margin-bottom: 10px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #2e7d32;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+}
+
+/* --- Contenedores de opciones --- */
+.opciones-material,
+.opciones-carton,
+.opciones-plastico,
+.medida_caja,
+.medida_papel,
+.medida_latas,
+.medida_pasta,
+.medida_pet,
+.medida_plegadiza {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;       /* Espacio entre tarjetas */
+    margin-top: 20px;
+}
+
+/* --- Tarjetas de opciones (los <a>) --- */
+a.opcion {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    text-decoration: none;
+    padding: 15px;
+    border: 2px solid #2e7d32;
+    border-radius: 10px;
+    background-color: #e8f5e9; /* Verde clarito */
+    color: #2e7d32;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+a.opcion:hover {
+    background-color: #2e7d32; /* Verde fuerte */
+    color: white;
+    transform: scale(1.05);
+}
+
+/* --- Imágenes dentro de las tarjetas --- */
+a.opcion img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+/* --- Footer opcional --- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 14px;
+}
